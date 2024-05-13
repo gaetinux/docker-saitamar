@@ -1,0 +1,16 @@
+;
+; Zone DNS beesafe.co
+;
+$TTL    604800
+@       IN	SOA     dns.beesafe.co. root.dns.beesafe.co. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+; Name servers
+@       IN	NS      dns.beesafe.co.
+dns     IN	A       127.0.0.1
+; Zone records
+@	      IN	A       127.0.0.1
+www       IN    CNAME   beesafe.co.
