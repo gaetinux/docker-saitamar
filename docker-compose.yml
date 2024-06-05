@@ -38,8 +38,8 @@ services:
     container_name: bind
     restart: always
     ports:
-      - "53:53/tcp"
-      - "53:53/udp"
+      - "<IP-SERVEUR-ICI>:53:53/tcp"
+      - "<IP-SERVEUR-ICI>:53:53/udp"
     volumes:
       - ./bind9/named.conf.options:/etc/bind/named.conf.options
       - ./bind9/named.conf.local:/etc/bind/named.conf.local
